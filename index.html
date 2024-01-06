@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TP INFORMATIQUE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1000;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 50px;
+    }
+    center {
+      margin-top: 50px;
+    }
+  h1 {
+  color: #00292d99;
+  font-size: 38px;
+}
+h2 {
+  font-size: 31px;
+  margin-bottom: 2px;
+  color: #fffbfbb2;
+  margin-top: -36px;
+}
+form {
+  max-width: 426px;
+  margin: 0 auto;
+  background-color: #ddd8d8b2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(21, 14, 14, 0.1);
+}
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="submit"] {
+      width: calc(100% - 12px);
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+ input[type="submit"] {
+  background-color: #bca5f070;
+  color: #fff;
+  border: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+a.button {
+  display: block;
+  width: 200px;
+  padding: 12px;
+  margin: 3px 0;
+  background-color: #bca5f070;
+  color: #ffffffed;
+  border: none;
+  border-radius: 27px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+    a.button:hover {
+      background-color: #0056b3;
+    }
+footer {
+  text-align: center;
+  margin-top: -22px;
+  color: #ffffffb2;
+}
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="video-background">
+    <source src="VBG.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+ <audio autoplay loop>
+    <source src="BGM.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="content">
+  <center>
+    <h1>TP INFORMATIQUE</h1>
+    <h2>Inscrire un lecteur</h2>
+
+    <form action="submit.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required><br>
+      <label for="borrowedBook">Borrowed Book:</label>
+      <input type="text" id="borrowedBook" name="borrowedBook" required><br>
+      <input type="submit" value="Register">
+    </form>
+
+    <a href="users.php" class="button">Afficher tous les lecteurs</a>
+    <a href="MCD.drawio.svg" class="button">EXO2 Model E/A</a>
+    <a href="MLD.drawio.svg" class="button">EXO2 Model Relationnel</a>
+
+    <h1><footer>Powered By MrNe0xf@Inc</footer></h1>
+  </center>
+</div>
+</body>
+</html>
